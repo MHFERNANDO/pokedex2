@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="contenedor">
+
+
+    <ion-card style="background-color: yellow; height: 100%; width: 100%;">
+      
+      <ion-card-header>
+        <ion-card-title style="color: black; text-align: center; font-weight: bold;">Pokemon</ion-card-title>
+        <br>
+        <ion-searchbar placeholder="Número o nombre de Pokémon" style="background-color: orange;" [(ngModel)]="idPoke" (keypress)="searchPokemon()"></ion-searchbar>
+  
+        <br>
+        <ion-card-title style="color: black;">{{idNombre}}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content style="display: flex; justify-content: center; align-items: center; background-color: black;">
+        <img [src]="imagenAPI" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);" height="50%" width="50%" />
+    </ion-card-content>
+    
+      <ion-card-title style="text-align: center; color: black; font-weight: bold;">Tipo de Pokémon:</ion-card-title>
+      <ion-card-title style="text-align: center; color: rgb(255, 0, 0); font-weight: bold;">{{tipoPokemon}}</ion-card-title>
+  
+      <br>
+  
+    </ion-card>
+  
+  
+  </div>
+</ion-content> 
